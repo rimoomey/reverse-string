@@ -1,6 +1,13 @@
 function reverseString(str) {
-  // type your code here
-}
+  const splitStr = str.split('');
+  let reverse = '';
+
+  for (i = splitStr.length - 1; i >= 0; i--) {
+    reverse += splitStr[i];
+  }
+
+  return reverse;
+ }
 
 if (require.main === module) {
   // add your own tests in here
